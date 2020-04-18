@@ -1,0 +1,10 @@
+# Spark configuration for Databricks cluster
+spark.mongodb.input.uri mongodb+srv://<username>:<password>@cluster0-ueaju.azure.mongodb.net/<database>.<collection>?retryWrites=true&w=majority 
+spark.mongodb.output.uri mongodb+srv://<username>:<password>@cluster0-ueaju.azure.mongodb.net/<database>.<collection>?retryWrites=true&w=majority spark.databricks.delta.preview.enabled true
+
+#Libraries to be installed on Databricks Cluster
+pymongo
+Pyspark_dist_explore
+org.mongodb.spark:mongo-spark-connector_2.11:2.2.7
+gensim
+nltk
